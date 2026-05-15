@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Hub</title>
+    <link rel="manifest" href="manifest.json">
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; background-color: #f4f4f9; }
+        .btn { display: block; width: 80%; max-width: 300px; padding: 15px; margin: 10px; text-align: center; text-decoration: none; color: #fff; border-radius: 8px; font-weight: bold; }
+        .gemini { background-color: #4285f4; }
+        .chatgpt { background-color: #10a37f; }
+        .claude { background-color: #d97757; }
+    </style>
+</head>
+<body>
+    <h2>اختر الذكاء الاصطناعي</h2>
+    <a href="https://gemini.google.com" class="btn gemini">Gemini</a>
+    <a href="https://chatgpt.com" class="btn chatgpt">ChatGPT</a>
+    <a href="https://claude.ai" class="btn claude">Claude</a>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
+</body>
+</html>
